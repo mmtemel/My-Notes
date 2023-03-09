@@ -7,6 +7,13 @@ else
 # check for Linux and run other commands
 endif
 
+OS := $(shell uname)
+ifeq ($(OS),Darwin)
+echo Darwin #MINILIBX = minilibx
+else
+echo Linux #MINILIBX = minilibx-linux
+endif
+
 Darwin is the core Unix operating system of macOS (previously OS X and Mac OS X), iOS, watchOS, tvOS, iPadOS and bridgeOS.
 It previously existed as an independent open-source operating system, first released by Apple Inc.
 in 2000. It is composed of code derived from NeXTSTEP, BSD, Mach, and other free software projects' code, as well as code developed by Apple.
