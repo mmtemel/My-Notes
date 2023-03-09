@@ -1,3 +1,9 @@
+cat -e -t -v Makefile
+
+$ is new line. ^I is tab.
+
+----
+
 OS detection in makefile
 
 OS := $(shell uname)
